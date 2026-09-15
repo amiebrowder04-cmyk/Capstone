@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.ipynb_checkpoints/
+Data Analytics Capstone Release Form.docx
+Data Analytics Capstone Topic Approval Form.docx
+Non-forprofit Data/
+Poverty Data/
