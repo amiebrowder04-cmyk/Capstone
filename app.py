@@ -28,6 +28,8 @@ def get_data():
 
     df = pd.DataFrame(results)
 
+    df.to_csv("hud_crosswalk.csv", index = False)
+
     return df.to_json(orient = "records")
 
 
