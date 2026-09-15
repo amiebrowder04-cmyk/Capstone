@@ -1,0 +1,35 @@
+from flask import Flask, jsonify
+import requests
+import pandas as pd 
+
+app = Flask(__name__)
+
+@app.route("/get-data", methods = ["GET"])
+def get_data():
+    #target website url
+    url = "https://www.huduser.gov/hudapi/public/usps?type=1&query=WA"
+
+    
+    token = os.getenv("HUD_API_TOKEN")
+
+    headers = {
+        "Authorization": f"Bearer {token}"
+    }
+    # fetch the webpage 
+    response = requests.get(url, headers=headers)
+
+    if response.status_code != 200:
+        return jsonify ({"error": "Falied to fetch website"}), 500
+
+    data = response.json()
+
+    results = data["data"]["results"]
+
+
+    df = pd.DataFrame(results)
+
+    return df.to_json(orient = "records")
+
+
+if __name__ == "__main__":
+    app.run(debug = True)
