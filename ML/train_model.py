@@ -71,3 +71,42 @@ kmeans = KMeans(
 
 #training the model and assigning each coutnry to a cluster
 cluster_labels = kmeans.fit_predict(X_scaled)
+
+#Adding the cluster assignment to the coutny data
+df["Cluster"] = cluster_labels
+
+"""
+#printing the counties by cluster 
+print(df[["County", "Poverty_Percent", "Unemployment_percent", "Did_Not_Graduate_percent", "Cluster"]].sort_values("Cluster"))
+
+#Calculating the average of each of the custers
+
+cluster_summary =df.groupby("Cluster")[ML_Features].mean()
+
+print("\n Cluster Averages:")
+print(cluster_summary)
+
+ Cluster Averages:
+         Poverty_Percent  Unemployment_percent  Did_Not_Graduate_percent
+Cluster
+0              19.600000              3.898227                 19.603065
+1               8.608333              4.490516                  8.598521
+2              12.460000              5.228410                 12.461591
+3              13.712500              7.325186                 13.706426
+
+"""
+# creating the needs score 
+df["Needs_Score"] = X_scaled.mean(axis = 1)
+
+# checking the results 
+print(
+    df[[
+        "County",
+        "Poverty_Percent",
+        "Unemployment_percent",
+        "Did_Not_Graduate_percent",
+        "Needs_Score",
+        "Cluster"
+
+    ]].sort_values("Needs_Score", ascending = False).head(10)
+)
