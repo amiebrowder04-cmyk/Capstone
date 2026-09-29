@@ -34,7 +34,7 @@ X_scaled = scaler.fit_transform(X)
 #checking diffrent clusters to determin which one will be best for our data 
 
 from sklearn.metrics import silhouette_score
-
+"""
 silhouette_scores = {}
 
 for k in range(2, 7):
@@ -57,6 +57,17 @@ for k, score in silhouette_scores.items():
 #results 
 # 2 clusters:  0.358
 # 3 clusters:  0.419
-# 4 clusters:  0.421
+# 4 clusters:  0.421 (We will use 4 clusters becasue it produced the best results)
 # 5 clusters:  0.409
 # 6 clusters:  0.409
+
+"""
+# creating the final k-means model with 4 clusters 
+kmeans = KMeans(
+    n_clusters = 4,
+    random_state= 42,
+    n_init= 10  
+)
+
+#training the model and assigning each coutnry to a cluster
+cluster_labels = kmeans.fit_predict(X_scaled)
