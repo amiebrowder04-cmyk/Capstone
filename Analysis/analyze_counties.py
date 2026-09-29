@@ -35,6 +35,7 @@ df["Final_Score"] = (
     + (df["Support_Gap_Score"] * 0.50)
 )
 
+"""
 #displaying counties with the highest final scores 
 print(
     df[[
@@ -43,6 +44,7 @@ print(
         "Final_Score"
     ]].sort_values("Final_Score", ascending = False).head(10)
 )
+"""
 
 #saving the results 
 OUTPUT_PATH = "../Final_combined_data/final_county_analysis.csv"
@@ -50,3 +52,24 @@ OUTPUT_PATH = "../Final_combined_data/final_county_analysis.csv"
 df.to_csv(OUTPUT_PATH, index = False)
 
 print(f"Final county analysis saved to {OUTPUT_PATH}")
+
+# create a ranked table of the top 3 counties 
+top_counties = df[[
+    "County",
+    "Cluster",
+    "Needs_Score",
+    "Support_Gap_Score",
+    "Final_Score"
+]].sort_values("Final_Score", ascending = False)
+top_3 = top_counties.head(3).copy()
+
+top_3.insert(0, "Rank", range(1,4))
+
+#print("\n Top 3 counties:")
+#print(top_3)
+
+#Save the top 3 counties to a CSV file 
+TOP_3_PATH = "../Final_combined_data/top_3_counties.csv"
+
+top_3.to_csv(TOP_3_PATH, index = False)
+print(f"Top 3 counties saved to {TOP_3_PATH}")
