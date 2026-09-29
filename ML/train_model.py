@@ -98,6 +98,7 @@ Cluster
 # creating the needs score 
 df["Needs_Score"] = X_scaled.mean(axis = 1)
 
+"""
 # checking the results 
 print(
     df[[
@@ -110,3 +111,10 @@ print(
 
     ]].sort_values("Needs_Score", ascending = False).head(10)
 )
+"""
+# saving the ML results 
+OUTPUT_PATH = "Final_combined_data/county_ml_results.csv"
+
+df.to_csv(OUTPUT_PATH, index = False)
+
+print(f"ML results saved to {OUTPUT_PATH}")
