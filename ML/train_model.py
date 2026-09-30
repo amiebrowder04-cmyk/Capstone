@@ -5,7 +5,7 @@ import mlflow
 import mlflow.sklearn 
 
 
-DATA_PATH = "Final_combined_data/final_combined_data.csv"
+DATA_PATH = "../Final_combined_data/final_combined_data.csv"
 
 #reading in the final_combined_data table  
 df = pd.read_csv(DATA_PATH)
@@ -62,15 +62,31 @@ for k, score in silhouette_scores.items():
 # 6 clusters:  0.409
 
 """
-# creating the final k-means model with 4 clusters 
-kmeans = KMeans(
-    n_clusters = 4,
-    random_state= 42,
-    n_init= 10  
-)
+#Starting the MLflow experiment 
+mlflow.set_experiment("Washington County Needs Clustering")
 
-#training the model and assigning each coutnry to a cluster
-cluster_labels = kmeans.fit_predict(X_scaled)
+
+#starting the run 
+with mlflow.start_run():
+
+
+    # creating the final k-means model with 4 clusters 
+    kmeans = KMeans(
+        n_clusters = 4,
+        random_state= 42,
+        n_init= 10  
+    )
+
+    #training the model and assigning each coutnry to a cluster
+    cluster_labels = kmeans.fit_predict(X_scaled)
+
+    mlflow.log_param("model", "KMeans")
+    mlflow.log_param("n_clusters", 4)
+    mlflow.log_param("random_state", 42)
+    mlflow.log_param("n_init", 10)
+
+    silhouette = silhouette_score(X_scaled, cluster_labels)
+    mlflow.log_metric("Silhouette_score", silhouette)
 
 #Adding the cluster assignment to the coutny data
 df["Cluster"] = cluster_labels
@@ -113,7 +129,7 @@ print(
 )
 """
 # saving the ML results 
-OUTPUT_PATH = "Final_combined_data/county_ml_results.csv"
+OUTPUT_PATH = "../Final_combined_data/county_ml_results.csv"
 
 df.to_csv(OUTPUT_PATH, index = False)
 
