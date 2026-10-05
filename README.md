@@ -89,7 +89,7 @@ Capstone project/
 ├── Analysis/
 │   └── analyze_counties.py
 │
-├── Capston Project Docs/
+├── Capstone Project Docs/
 │   ├── Capstone_Displays.twb
 │   ├── Data Dictionary.xlsx
 │   ├── Project tracking.xlsx
@@ -125,10 +125,10 @@ Capstone project/
 
 Folder Descriptions
 •	Analysis/ – Contains the Python script used to analyze the county-level data and calculate the project metrics.
-•	Capston Project Docs/ – Contains project documentation, the data dictionary, proposal and approval documents, Tableau workbook, and project tracking files.
+•	Capstone Project Docs/ – Contains project documentation, the data dictionary, proposal and approval documents, Tableau workbook, and project tracking files.
 •	Final_combined_data/ – Contains the processed county-level datasets, machine learning results, final analysis, and top three county results.
 •	ML/ – Contains the scripts used to train and evaluate the K-Means clustering model.
-•	Non-forprofit Data/ – Contains the original IRS nonprofit data used to identify nonprofit organizations and their locations in Washington State.
+•	Non profit Data/ – Contains the original IRS nonprofit data used to identify nonprofit organizations and their locations in Washington State.
 •	Poverty Data/ – Contains the original Census poverty dataset and supporting metadata used to identify county-level measures of community need.
 •	Zip-county cross walk/ – Contains the HUD ZIP Code-to-county crosswalk used to connect nonprofit ZIP Codes to Washington State counties.
 •	tests/ – Contains automated tests used to verify the completeness, accuracy, and consistency of the final county-level analysis and scoring results.
