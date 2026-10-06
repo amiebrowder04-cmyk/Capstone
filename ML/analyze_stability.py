@@ -1,7 +1,7 @@
 import pandas as pd 
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
-from sklearn.metrics import adjusted_rand_score
+from sklearn.metrics import adjusted_rand_score, silhouette_samples
 
 # Load the county-level data 
 df = pd.read_csv("Final_combined_data/final_county_analysis.csv")
@@ -46,3 +46,27 @@ print(df[features].describe().loc[["mean", "std"]])
 
 print("\nAfter Scaling:")
 print(pd.DataFrame(X_scaled, columns = features).describe().loc[["mean", "std"]])
+
+
+# Identify coutnies with the lowest indavidula silhouette scores 
+kmeans = KMeans(
+    n_clusters=4,
+    random_state=42,
+    n_init=10
+)
+
+labels = kmeans.fit_predict(X_scaled)
+
+individual_shiloette = silhouette_samples(X_scaled, labels)
+
+silhouette_results = pd.DataFrame({
+    "County": df["County"],
+    "Cluster": labels,
+    "Silhouette_Score": individual_shiloette
+})
+
+# Sort from lowest to highest 
+silhouette_results = silhouette_results.sort_values("Silhouette_Score")
+
+print("\nCounties with the lowest silhouette scores:")
+print(silhouette_results.head(10).to_string(index = False))
