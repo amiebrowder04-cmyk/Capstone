@@ -1,0 +1,3043 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0819.2015                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='284cf2639dad2b7810718f33be247c9bfadf4194c4398fb3c3ecf54ce30c0849' _.fcp.WorkbookFingerprinting.true...creator-author-id='284cf2639dad2b7810718f33be247c9bfadf4194c4398fb3c3ecf54ce30c0849' _.fcp.WorkbookFingerprinting.true...creator-license-type='public' _.fcp.WorkbookFingerprinting.true...creator-machine-id='284cf2639dad2b7810718f33be247c9bfadf4194c4398fb3c3ecf54ce30c0849' _.fcp.WorkbookFingerprinting.true...license-type='public' _.fcp.WorkbookFingerprinting.true...machine-id='284cf2639dad2b7810718f33be247c9bfadf4194c4398fb3c3ecf54ce30c0849' original-version='18.1' source-build='2026.2.2 (20262.26.0819.2015)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Label Selection' datatype='string' name='[Parameter 0127596269096961]' param-domain-type='list' role='measure' type='nominal' value='&quot;None&quot;'>
+        <calculation class='tableau' formula='&quot;None&quot;' />
+        <members>
+          <member value='&quot;None&quot;' />
+          <member value='&quot;Nonprofits per 1,000&quot;' />
+          <member value='&quot;People per Nonprofit&quot;' />
+        </members>
+      </column>
+    </datasource>
+    <datasource caption='final_county_analysis' inline='true' name='federated.05ksf291bp3f8y1bps1lm07pogy0' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='final_county_analysis' name='textscan.0fcrhqu1hxzxz5183jk0w1191qxf'>
+            <connection class='textscan' directory='C:/Users/amiea/OneDrive/Desktop/Capstone project/Final_combined_data' filename='final_county_analysis.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0fcrhqu1hxzxz5183jk0w1191qxf' name='final_county_analysis.csv' table='[final_county_analysis#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='County_ID' ordinal='0' />
+            <column datatype='string' name='County' ordinal='1' />
+            <column datatype='integer' name='Total_Population' ordinal='2' />
+            <column datatype='integer' name='Below_Poverty' ordinal='3' />
+            <column datatype='integer' name='Total_Labor_Force' ordinal='4' />
+            <column datatype='integer' name='Unemployed' ordinal='5' />
+            <column datatype='integer' name='Less_Than_High_School' ordinal='6' />
+            <column datatype='real' name='Poverty_Percent' ordinal='7' />
+            <column datatype='integer' name='Nonprofit_count' ordinal='8' />
+            <column datatype='integer' name='A' ordinal='9' />
+            <column datatype='integer' name='B' ordinal='10' />
+            <column datatype='integer' name='C' ordinal='11' />
+            <column datatype='integer' name='D' ordinal='12' />
+            <column datatype='integer' name='E' ordinal='13' />
+            <column datatype='integer' name='F' ordinal='14' />
+            <column datatype='integer' name='G' ordinal='15' />
+            <column datatype='integer' name='H' ordinal='16' />
+            <column datatype='integer' name='I' ordinal='17' />
+            <column datatype='integer' name='J' ordinal='18' />
+            <column datatype='integer' name='K' ordinal='19' />
+            <column datatype='integer' name='L' ordinal='20' />
+            <column datatype='integer' name='M' ordinal='21' />
+            <column datatype='integer' name='N' ordinal='22' />
+            <column datatype='integer' name='O' ordinal='23' />
+            <column datatype='integer' name='P' ordinal='24' />
+            <column datatype='integer' name='Q' ordinal='25' />
+            <column datatype='integer' name='R' ordinal='26' />
+            <column datatype='integer' name='S' ordinal='27' />
+            <column datatype='integer' name='T' ordinal='28' />
+            <column datatype='integer' name='U' ordinal='29' />
+            <column datatype='integer' name='V' ordinal='30' />
+            <column datatype='integer' name='W' ordinal='31' />
+            <column datatype='integer' name='X' ordinal='32' />
+            <column datatype='integer' name='Y' ordinal='33' />
+            <column datatype='integer' name='Z' ordinal='34' />
+            <column datatype='real' name='Nonprofits_Per_1000' ordinal='35' />
+            <column datatype='real' name='People_Per_Nonprofit' ordinal='36' />
+            <column datatype='real' name='Unemployment_percent' ordinal='37' />
+            <column datatype='real' name='Did_Not_Graduate_percent' ordinal='38' />
+            <column datatype='integer' name='Cluster' ordinal='39' />
+            <column datatype='real' name='Needs_Score' ordinal='40' />
+            <column datatype='real' name='Support_Gap_Score' ordinal='41' />
+            <column datatype='real' name='Final_Score' ordinal='42' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[County_ID]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>County_ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[County]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>County</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total_Population</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total_Population]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>Total_Population</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Below_Poverty</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Below_Poverty]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>Below_Poverty</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total_Labor_Force</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total_Labor_Force]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>Total_Labor_Force</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unemployed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Unemployed]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>Unemployed</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Less_Than_High_School</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Less_Than_High_School]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>Less_Than_High_School</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Poverty_Percent</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Poverty_Percent]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>Poverty_Percent</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nonprofit_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Nonprofit_count]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>Nonprofit_count</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[A]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>A</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>B</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>C</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[C]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>C</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>D</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[D]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>D</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[E]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>E</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>F</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>G</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[G]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>G</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>H</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[H]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>H</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>I</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[I]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>I</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>J</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[J]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>J</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>K</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[K]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>K</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>L</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[L]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>L</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[M]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>M</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[N]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>N</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>O</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[O]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>O</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>P</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[P]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>P</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Q</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Q]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>Q</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[R]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>R</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[S]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>S</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>T</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[T]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>T</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>U</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[U]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>U</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[V]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>V</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>W</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[W]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>W</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>X</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[X]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>X</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Y</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Y]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>Y</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Z</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Z]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>Z</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nonprofits_Per_1000</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Nonprofits_Per_1000]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>Nonprofits_Per_1000</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>People_Per_Nonprofit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[People_Per_Nonprofit]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>People_Per_Nonprofit</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unemployment_percent</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Unemployment_percent]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>Unemployment_percent</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Did_Not_Graduate_percent</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Did_Not_Graduate_percent]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>Did_Not_Graduate_percent</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cluster</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cluster]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>Cluster</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Needs_Score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Needs_Score]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>Needs_Score</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Support_Gap_Score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Support_Gap_Score]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>Support_Gap_Score</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Final_Score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Final_Score]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>Final_Score</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Below Poverty' datatype='integer' name='[Below_Poverty]' role='measure' type='quantitative' />
+      <column caption='Support Map Labels' datatype='string' name='[Calculation_0127596269596674]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Parameters].[Parameter 0127596269096961] = &quot;Nonprofits per 1,000&quot; THEN&#13;&#10;    STR(ROUND([Nonprofits_Per_1000], 1))&#13;&#10;&#13;&#10;ELSEIF [Parameters].[Parameter 0127596269096961] = &quot;People per Nonprofit&quot; THEN&#13;&#10;    STR(ROUND([People_Per_Nonprofit], 0))&#13;&#10;&#13;&#10;ELSEIF [Parameters].[Parameter 0127596269096961] = &quot;None&quot; THEN&#13;&#10;    &quot;&quot;&#13;&#10;&#13;&#10;END' />
+      </column>
+      <column datatype='string' name='[County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='County ID' datatype='integer' name='[County_ID]' role='dimension' type='ordinal' />
+      <column caption='Did Not Graduate percent' datatype='real' name='[Did_Not_Graduate_percent]' role='measure' type='quantitative' />
+      <column caption='Final Score' datatype='real' name='[Final_Score]' role='measure' type='quantitative' />
+      <column caption='Less Than High School' datatype='integer' name='[Less_Than_High_School]' role='measure' type='quantitative' />
+      <column caption='Needs Score' datatype='real' name='[Needs_Score]' role='measure' type='quantitative' />
+      <column caption='Nonprofit count' datatype='integer' name='[Nonprofit_count]' role='measure' type='quantitative' />
+      <column caption='Nonprofits Per 1000' datatype='real' name='[Nonprofits_Per_1000]' role='measure' type='quantitative' />
+      <column caption='People Per Nonprofit' datatype='real' name='[People_Per_Nonprofit]' role='measure' type='quantitative' />
+      <column caption='Poverty Percent' datatype='real' name='[Poverty_Percent]' role='measure' type='quantitative' />
+      <column caption='Support Gap Score' datatype='real' name='[Support_Gap_Score]' role='measure' type='quantitative' />
+      <column caption='Total Labor Force' datatype='integer' name='[Total_Labor_Force]' role='measure' type='quantitative' />
+      <column caption='Total Population' datatype='integer' name='[Total_Population]' role='measure' type='quantitative' />
+      <column caption='Unemployment percent' datatype='real' name='[Unemployment_percent]' role='measure' type='quantitative' />
+      <column caption='final_county_analysis.csv' datatype='table' name='[__tableau_internal_object_id__].[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/amiea/AppData/Local/Temp/TableauTemp/#TableauTemp_02w8x6z17fziv514y93r90bzdkwh.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/06/2026 04:25:11 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>County_ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[County_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>County_ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>County</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[County]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>County</remote-alias>
+              <ordinal>1</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total_Population</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total_Population]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total_Population</remote-alias>
+              <ordinal>2</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Below_Poverty</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Below_Poverty]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Below_Poverty</remote-alias>
+              <ordinal>3</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total_Labor_Force</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total_Labor_Force]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total_Labor_Force</remote-alias>
+              <ordinal>4</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Unemployed</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Unemployed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Unemployed</remote-alias>
+              <ordinal>5</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Less_Than_High_School</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Less_Than_High_School]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Less_Than_High_School</remote-alias>
+              <ordinal>6</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Poverty_Percent</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Poverty_Percent]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Poverty_Percent</remote-alias>
+              <ordinal>7</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Nonprofit_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Nonprofit_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Nonprofit_count</remote-alias>
+              <ordinal>8</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>A</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[A]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>A</remote-alias>
+              <ordinal>9</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>B</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[B]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>B</remote-alias>
+              <ordinal>10</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>36</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>C</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[C]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>C</remote-alias>
+              <ordinal>11</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>D</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[D]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>D</remote-alias>
+              <ordinal>12</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>E</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[E]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>E</remote-alias>
+              <ordinal>13</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F</remote-alias>
+              <ordinal>14</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>G</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[G]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>G</remote-alias>
+              <ordinal>15</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>H</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[H]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>H</remote-alias>
+              <ordinal>16</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>I</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[I]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>I</remote-alias>
+              <ordinal>17</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>J</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[J]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>J</remote-alias>
+              <ordinal>18</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>K</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[K]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>K</remote-alias>
+              <ordinal>19</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>L</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[L]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>L</remote-alias>
+              <ordinal>20</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>M</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[M]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>M</remote-alias>
+              <ordinal>21</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>N</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[N]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>N</remote-alias>
+              <ordinal>22</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>37</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>O</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[O]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>O</remote-alias>
+              <ordinal>23</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>P</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[P]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>P</remote-alias>
+              <ordinal>24</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Q</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Q]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Q</remote-alias>
+              <ordinal>25</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>R</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[R]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>R</remote-alias>
+              <ordinal>26</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>S</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[S]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>S</remote-alias>
+              <ordinal>27</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>T</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[T]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>T</remote-alias>
+              <ordinal>28</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>U</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[U]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>U</remote-alias>
+              <ordinal>29</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>V</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[V]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>V</remote-alias>
+              <ordinal>30</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>W</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[W]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>W</remote-alias>
+              <ordinal>31</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>X</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[X]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>X</remote-alias>
+              <ordinal>32</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>36</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Y</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Y]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Y</remote-alias>
+              <ordinal>33</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Z</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Z]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Z</remote-alias>
+              <ordinal>34</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Nonprofits_Per_1000</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Nonprofits_Per_1000]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Nonprofits_Per_1000</remote-alias>
+              <ordinal>35</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>People_Per_Nonprofit</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[People_Per_Nonprofit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>People_Per_Nonprofit</remote-alias>
+              <ordinal>36</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Unemployment_percent</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Unemployment_percent]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Unemployment_percent</remote-alias>
+              <ordinal>37</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Did_Not_Graduate_percent</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Did_Not_Graduate_percent]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Did_Not_Graduate_percent</remote-alias>
+              <ordinal>38</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Cluster</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Cluster]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Cluster</remote-alias>
+              <ordinal>39</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Needs_Score</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Needs_Score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Needs_Score</remote-alias>
+              <ordinal>40</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Support_Gap_Score</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Support_Gap_Score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Support_Gap_Score</remote-alias>
+              <ordinal>41</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Final_Score</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Final_Score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Final_Score</remote-alias>
+              <ordinal>42</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+        <semantic-value key='[County].[Name]' value='%null%' />
+        <semantic-value key='[State].[Name]' value='&quot;Washington&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='County_ID' />
+        <field-sort-custom-order field='County' />
+        <field-sort-custom-order field='Calculation_0127596269596674' />
+        <field-sort-custom-order field='Total_Population' />
+        <field-sort-custom-order field='Below_Poverty' />
+        <field-sort-custom-order field='Total_Labor_Force' />
+        <field-sort-custom-order field='Unemployed' />
+        <field-sort-custom-order field='Less_Than_High_School' />
+        <field-sort-custom-order field='Poverty_Percent' />
+        <field-sort-custom-order field='Nonprofit_count' />
+        <field-sort-custom-order field='A' />
+        <field-sort-custom-order field='B' />
+        <field-sort-custom-order field='C' />
+        <field-sort-custom-order field='D' />
+        <field-sort-custom-order field='E' />
+        <field-sort-custom-order field='F' />
+        <field-sort-custom-order field='G' />
+        <field-sort-custom-order field='H' />
+        <field-sort-custom-order field='I' />
+        <field-sort-custom-order field='J' />
+        <field-sort-custom-order field='K' />
+        <field-sort-custom-order field='L' />
+        <field-sort-custom-order field='M' />
+        <field-sort-custom-order field='N' />
+        <field-sort-custom-order field='O' />
+        <field-sort-custom-order field='P' />
+        <field-sort-custom-order field='Q' />
+        <field-sort-custom-order field='R' />
+        <field-sort-custom-order field='S' />
+        <field-sort-custom-order field='T' />
+        <field-sort-custom-order field='U' />
+        <field-sort-custom-order field='V' />
+        <field-sort-custom-order field='W' />
+        <field-sort-custom-order field='X' />
+        <field-sort-custom-order field='Y' />
+        <field-sort-custom-order field='Z' />
+        <field-sort-custom-order field='Nonprofits_Per_1000' />
+        <field-sort-custom-order field='People_Per_Nonprofit' />
+        <field-sort-custom-order field='Unemployment_percent' />
+        <field-sort-custom-order field='Did_Not_Graduate_percent' />
+        <field-sort-custom-order field='Cluster' />
+        <field-sort-custom-order field='Needs_Score' />
+        <field-sort-custom-order field='Support_Gap_Score' />
+        <field-sort-custom-order field='Final_Score' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Label Selection' datatype='string' name='[Parameter 0127596269096961]' param-domain-type='list' role='measure' type='nominal' value='&quot;None&quot;'>
+          <calculation class='tableau' formula='&quot;None&quot;' />
+        </column>
+      </datasource-dependencies>
+      <object-graph>
+        <objects>
+          <object caption='final_county_analysis.csv' id='final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE'>
+            <properties context=''>
+              <relation connection='textscan.0fcrhqu1hxzxz5183jk0w1191qxf' name='final_county_analysis.csv' table='[final_county_analysis#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='County_ID' ordinal='0' />
+                  <column datatype='string' name='County' ordinal='1' />
+                  <column datatype='integer' name='Total_Population' ordinal='2' />
+                  <column datatype='integer' name='Below_Poverty' ordinal='3' />
+                  <column datatype='integer' name='Total_Labor_Force' ordinal='4' />
+                  <column datatype='integer' name='Unemployed' ordinal='5' />
+                  <column datatype='integer' name='Less_Than_High_School' ordinal='6' />
+                  <column datatype='real' name='Poverty_Percent' ordinal='7' />
+                  <column datatype='integer' name='Nonprofit_count' ordinal='8' />
+                  <column datatype='integer' name='A' ordinal='9' />
+                  <column datatype='integer' name='B' ordinal='10' />
+                  <column datatype='integer' name='C' ordinal='11' />
+                  <column datatype='integer' name='D' ordinal='12' />
+                  <column datatype='integer' name='E' ordinal='13' />
+                  <column datatype='integer' name='F' ordinal='14' />
+                  <column datatype='integer' name='G' ordinal='15' />
+                  <column datatype='integer' name='H' ordinal='16' />
+                  <column datatype='integer' name='I' ordinal='17' />
+                  <column datatype='integer' name='J' ordinal='18' />
+                  <column datatype='integer' name='K' ordinal='19' />
+                  <column datatype='integer' name='L' ordinal='20' />
+                  <column datatype='integer' name='M' ordinal='21' />
+                  <column datatype='integer' name='N' ordinal='22' />
+                  <column datatype='integer' name='O' ordinal='23' />
+                  <column datatype='integer' name='P' ordinal='24' />
+                  <column datatype='integer' name='Q' ordinal='25' />
+                  <column datatype='integer' name='R' ordinal='26' />
+                  <column datatype='integer' name='S' ordinal='27' />
+                  <column datatype='integer' name='T' ordinal='28' />
+                  <column datatype='integer' name='U' ordinal='29' />
+                  <column datatype='integer' name='V' ordinal='30' />
+                  <column datatype='integer' name='W' ordinal='31' />
+                  <column datatype='integer' name='X' ordinal='32' />
+                  <column datatype='integer' name='Y' ordinal='33' />
+                  <column datatype='integer' name='Z' ordinal='34' />
+                  <column datatype='real' name='Nonprofits_Per_1000' ordinal='35' />
+                  <column datatype='real' name='People_Per_Nonprofit' ordinal='36' />
+                  <column datatype='real' name='Unemployment_percent' ordinal='37' />
+                  <column datatype='real' name='Did_Not_Graduate_percent' ordinal='38' />
+                  <column datatype='integer' name='Cluster' ordinal='39' />
+                  <column datatype='real' name='Needs_Score' ordinal='40' />
+                  <column datatype='real' name='Support_Gap_Score' ordinal='41' />
+                  <column datatype='real' name='Final_Score' ordinal='42' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='final_county_analysis (copy)' inline='true' name='federated.05ksf291bp3f8y1bps1lm07pogy0 (copy)' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='final_county_analysis' name='textscan.0fcrhqu1hxzxz5183jk0w1191qxf (copy)'>
+            <connection class='textscan' directory='C:/Users/amiea/OneDrive/Desktop/Capstone project/Final_combined_data' filename='final_county_analysis.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='integer' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[A]' />
+            <value name='[B]' />
+            <value name='[C]' />
+            <value name='[D]' />
+            <value name='[E]' />
+            <value name='[F]' />
+            <value name='[G]' />
+            <value name='[H]' />
+            <value name='[I]' />
+            <value name='[J]' />
+            <value name='[K]' />
+            <value name='[L]' />
+            <value name='[M]' />
+            <value name='[N]' />
+            <value name='[O]' />
+            <value name='[P]' />
+            <value name='[Q]' />
+            <value name='[R]' />
+            <value name='[S]' />
+            <value name='[T]' />
+            <value name='[U]' />
+            <value name='[V]' />
+            <value name='[W]' />
+            <value name='[X]' />
+            <value name='[Y]' />
+            <value name='[Z]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[final_county_analysis.csv].[A]' />
+              <field name='[final_county_analysis.csv].[B]' />
+              <field name='[final_county_analysis.csv].[C]' />
+              <field name='[final_county_analysis.csv].[D]' />
+              <field name='[final_county_analysis.csv].[E]' />
+              <field name='[final_county_analysis.csv].[F]' />
+              <field name='[final_county_analysis.csv].[G]' />
+              <field name='[final_county_analysis.csv].[H]' />
+              <field name='[final_county_analysis.csv].[I]' />
+              <field name='[final_county_analysis.csv].[J]' />
+              <field name='[final_county_analysis.csv].[K]' />
+              <field name='[final_county_analysis.csv].[L]' />
+              <field name='[final_county_analysis.csv].[M]' />
+              <field name='[final_county_analysis.csv].[N]' />
+              <field name='[final_county_analysis.csv].[O]' />
+              <field name='[final_county_analysis.csv].[P]' />
+              <field name='[final_county_analysis.csv].[Q]' />
+              <field name='[final_county_analysis.csv].[R]' />
+              <field name='[final_county_analysis.csv].[S]' />
+              <field name='[final_county_analysis.csv].[T]' />
+              <field name='[final_county_analysis.csv].[U]' />
+              <field name='[final_county_analysis.csv].[V]' />
+              <field name='[final_county_analysis.csv].[W]' />
+              <field name='[final_county_analysis.csv].[X]' />
+              <field name='[final_county_analysis.csv].[Y]' />
+              <field name='[final_county_analysis.csv].[Z]' />
+            </group>
+          </groups>
+          <relation connection='textscan.0fcrhqu1hxzxz5183jk0w1191qxf (copy)' name='final_county_analysis.csv' table='[final_county_analysis#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='County_ID' ordinal='0' />
+              <column datatype='string' name='County' ordinal='1' />
+              <column datatype='integer' name='Total_Population' ordinal='2' />
+              <column datatype='integer' name='Below_Poverty' ordinal='3' />
+              <column datatype='integer' name='Total_Labor_Force' ordinal='4' />
+              <column datatype='integer' name='Unemployed' ordinal='5' />
+              <column datatype='integer' name='Less_Than_High_School' ordinal='6' />
+              <column datatype='real' name='Poverty_Percent' ordinal='7' />
+              <column datatype='integer' name='Nonprofit_count' ordinal='8' />
+              <column datatype='integer' name='A' ordinal='9' />
+              <column datatype='integer' name='B' ordinal='10' />
+              <column datatype='integer' name='C' ordinal='11' />
+              <column datatype='integer' name='D' ordinal='12' />
+              <column datatype='integer' name='E' ordinal='13' />
+              <column datatype='integer' name='F' ordinal='14' />
+              <column datatype='integer' name='G' ordinal='15' />
+              <column datatype='integer' name='H' ordinal='16' />
+              <column datatype='integer' name='I' ordinal='17' />
+              <column datatype='integer' name='J' ordinal='18' />
+              <column datatype='integer' name='K' ordinal='19' />
+              <column datatype='integer' name='L' ordinal='20' />
+              <column datatype='integer' name='M' ordinal='21' />
+              <column datatype='integer' name='N' ordinal='22' />
+              <column datatype='integer' name='O' ordinal='23' />
+              <column datatype='integer' name='P' ordinal='24' />
+              <column datatype='integer' name='Q' ordinal='25' />
+              <column datatype='integer' name='R' ordinal='26' />
+              <column datatype='integer' name='S' ordinal='27' />
+              <column datatype='integer' name='T' ordinal='28' />
+              <column datatype='integer' name='U' ordinal='29' />
+              <column datatype='integer' name='V' ordinal='30' />
+              <column datatype='integer' name='W' ordinal='31' />
+              <column datatype='integer' name='X' ordinal='32' />
+              <column datatype='integer' name='Y' ordinal='33' />
+              <column datatype='integer' name='Z' ordinal='34' />
+              <column datatype='real' name='Nonprofits_Per_1000' ordinal='35' />
+              <column datatype='real' name='People_Per_Nonprofit' ordinal='36' />
+              <column datatype='real' name='Unemployment_percent' ordinal='37' />
+              <column datatype='real' name='Did_Not_Graduate_percent' ordinal='38' />
+              <column datatype='integer' name='Cluster' ordinal='39' />
+              <column datatype='real' name='Needs_Score' ordinal='40' />
+              <column datatype='real' name='Support_Gap_Score' ordinal='41' />
+              <column datatype='real' name='Final_Score' ordinal='42' />
+            </columns>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[County_ID]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>County_ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[County]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>County</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total_Population</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total_Population]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>Total_Population</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Below_Poverty</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Below_Poverty]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>Below_Poverty</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total_Labor_Force</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total_Labor_Force]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>Total_Labor_Force</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unemployed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Unemployed]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>Unemployed</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Less_Than_High_School</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Less_Than_High_School]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>Less_Than_High_School</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Poverty_Percent</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Poverty_Percent]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>Poverty_Percent</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nonprofit_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Nonprofit_count]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>Nonprofit_count</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nonprofits_Per_1000</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Nonprofits_Per_1000]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>Nonprofits_Per_1000</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>People_Per_Nonprofit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[People_Per_Nonprofit]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>People_Per_Nonprofit</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unemployment_percent</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Unemployment_percent]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>Unemployment_percent</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Did_Not_Graduate_percent</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Did_Not_Graduate_percent]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>Did_Not_Graduate_percent</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cluster</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cluster]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>Cluster</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Needs_Score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Needs_Score]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>Needs_Score</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Support_Gap_Score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Support_Gap_Score]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>Support_Gap_Score</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Final_Score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Final_Score]</local-name>
+            <parent-name>[final_county_analysis.csv]</parent-name>
+            <remote-alias>Final_Score</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Values</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pivot Field Values]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Below Poverty' datatype='integer' name='[Below_Poverty]' role='measure' type='quantitative' />
+      <column caption='Support Map Labels' datatype='string' name='[Calculation_0127596269596674]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Parameters].[Parameter 0127596269096961] = &quot;Nonprofits per 1,000&quot; THEN&#13;&#10;    STR(ROUND([Nonprofits_Per_1000], 1))&#13;&#10;&#13;&#10;ELSEIF [Parameters].[Parameter 0127596269096961] = &quot;People per Nonprofit&quot; THEN&#13;&#10;    STR(ROUND([People_Per_Nonprofit], 0))&#13;&#10;&#13;&#10;ELSEIF [Parameters].[Parameter 0127596269096961] = &quot;None&quot; THEN&#13;&#10;    &quot;&quot;&#13;&#10;&#13;&#10;END' />
+      </column>
+      <column caption='Nonprofit Type' datatype='string' name='[Calculation_0127596276912131]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='CASE [Pivot Field Names]&#13;&#10;&#13;&#10;WHEN &quot;A&quot; THEN &quot;Arts, Culture &amp; Humanities&quot;&#13;&#10;WHEN &quot;B&quot; THEN &quot;Education&quot;&#13;&#10;WHEN &quot;C&quot; THEN &quot;Environment&quot;&#13;&#10;WHEN &quot;D&quot; THEN &quot;Animal-Related&quot;&#13;&#10;WHEN &quot;E&quot; THEN &quot;Health Care&quot;&#13;&#10;WHEN &quot;F&quot; THEN &quot;Mental Health &amp; Crisis Intervention&quot;&#13;&#10;WHEN &quot;G&quot; THEN &quot;Diseases, Disorders &amp; Medical Disciplines&quot;&#13;&#10;WHEN &quot;H&quot; THEN &quot;Medical Research&quot;&#13;&#10;WHEN &quot;I&quot; THEN &quot;Crime &amp; Legal-Related&quot;&#13;&#10;WHEN &quot;J&quot; THEN &quot;Employment&quot;&#13;&#10;WHEN &quot;K&quot; THEN &quot;Food, Agriculture &amp; Nutrition&quot;&#13;&#10;WHEN &quot;L&quot; THEN &quot;Housing &amp; Shelter&quot;&#13;&#10;WHEN &quot;M&quot; THEN &quot;Public Safety, Disaster Preparedness &amp; Relief&quot;&#13;&#10;WHEN &quot;N&quot; THEN &quot;Recreation, Sports, Leisure &amp; Athletics&quot;&#13;&#10;WHEN &quot;O&quot; THEN &quot;Youth Development&quot;&#13;&#10;WHEN &quot;P&quot; THEN &quot;Human Services&quot;&#13;&#10;WHEN &quot;Q&quot; THEN &quot;International, Foreign Affairs &amp; National Security&quot;&#13;&#10;WHEN &quot;R&quot; THEN &quot;Civil Rights, Social Action &amp; Advocacy&quot;&#13;&#10;WHEN &quot;S&quot; THEN &quot;Community Improvement &amp; Capacity Building&quot;&#13;&#10;WHEN &quot;T&quot; THEN &quot;Philanthropy, Voluntarism &amp; Grantmaking Foundations&quot;&#13;&#10;WHEN &quot;U&quot; THEN &quot;Science &amp; Technology&quot;&#13;&#10;WHEN &quot;V&quot; THEN &quot;Social Science&quot;&#13;&#10;WHEN &quot;W&quot; THEN &quot;Public &amp; Societal Benefit&quot;&#13;&#10;WHEN &quot;X&quot; THEN &quot;Religion-Related&quot;&#13;&#10;WHEN &quot;Y&quot; THEN &quot;Mutual &amp; Membership Benefit&quot;&#13;&#10;WHEN &quot;Z&quot; THEN &quot;Unknown&quot;&#13;&#10;&#13;&#10;END' />
+      </column>
+      <column datatype='string' name='[County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='County ID' datatype='integer' name='[County_ID]' role='dimension' type='ordinal' />
+      <column caption='Did Not Graduate percent' datatype='real' name='[Did_Not_Graduate_percent]' role='measure' type='quantitative' />
+      <column caption='Final Score' datatype='real' name='[Final_Score]' role='measure' type='quantitative' />
+      <column caption='Less Than High School' datatype='integer' name='[Less_Than_High_School]' role='measure' type='quantitative' />
+      <column caption='Needs Score' datatype='real' name='[Needs_Score]' role='measure' type='quantitative' />
+      <column caption='Nonprofit count' datatype='integer' name='[Nonprofit_count]' role='measure' type='quantitative' />
+      <column caption='Nonprofits Per 1000' datatype='real' name='[Nonprofits_Per_1000]' role='measure' type='quantitative' />
+      <column caption='People Per Nonprofit' datatype='real' name='[People_Per_Nonprofit]' role='measure' type='quantitative' />
+      <column caption='Nonprofit Type Code' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+      <column caption='Nonprofit Count' datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
+      <column caption='Poverty Percent' datatype='real' name='[Poverty_Percent]' role='measure' type='quantitative' />
+      <column caption='Support Gap Score' datatype='real' name='[Support_Gap_Score]' role='measure' type='quantitative' />
+      <column caption='Total Labor Force' datatype='integer' name='[Total_Labor_Force]' role='measure' type='quantitative' />
+      <column caption='Total Population' datatype='integer' name='[Total_Population]' role='measure' type='quantitative' />
+      <column caption='Unemployment percent' datatype='real' name='[Unemployment_percent]' role='measure' type='quantitative' />
+      <column caption='final_county_analysis.csv' datatype='table' name='[__tableau_internal_object_id__].[final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/amiea/AppData/Local/Temp/TableauTemp/#TableauTemp_0k83h0x1k8el2q18suzoe0l2win3.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/06/2026 05:12:43 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>County_ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[County_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>County_ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>County</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[County]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>County</remote-alias>
+              <ordinal>1</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total_Population</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total_Population]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total_Population</remote-alias>
+              <ordinal>2</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Below_Poverty</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Below_Poverty]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Below_Poverty</remote-alias>
+              <ordinal>3</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total_Labor_Force</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total_Labor_Force]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total_Labor_Force</remote-alias>
+              <ordinal>4</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Unemployed</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Unemployed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Unemployed</remote-alias>
+              <ordinal>5</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Less_Than_High_School</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Less_Than_High_School]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Less_Than_High_School</remote-alias>
+              <ordinal>6</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Poverty_Percent</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Poverty_Percent]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Poverty_Percent</remote-alias>
+              <ordinal>7</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Nonprofit_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Nonprofit_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Nonprofit_count</remote-alias>
+              <ordinal>8</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Nonprofits_Per_1000</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Nonprofits_Per_1000]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Nonprofits_Per_1000</remote-alias>
+              <ordinal>9</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>People_Per_Nonprofit</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[People_Per_Nonprofit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>People_Per_Nonprofit</remote-alias>
+              <ordinal>10</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Unemployment_percent</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Unemployment_percent]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Unemployment_percent</remote-alias>
+              <ordinal>11</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Did_Not_Graduate_percent</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Did_Not_Graduate_percent]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Did_Not_Graduate_percent</remote-alias>
+              <ordinal>12</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Cluster</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Cluster]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Cluster</remote-alias>
+              <ordinal>13</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Needs_Score</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Needs_Score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Needs_Score</remote-alias>
+              <ordinal>14</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Support_Gap_Score</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Support_Gap_Score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Support_Gap_Score</remote-alias>
+              <ordinal>15</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Final_Score</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Final_Score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Final_Score</remote-alias>
+              <ordinal>16</ordinal>
+              <family>final_county_analysis.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pivot Field Names</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Pivot Field Names]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pivot Field Names</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Pivot</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pivot Field Values</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Pivot Field Values]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pivot Field Values</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Pivot</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>139</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+        <semantic-value key='[County].[Name]' value='%null%' />
+        <semantic-value key='[State].[Name]' value='&quot;Washington&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='County_ID' />
+        <field-sort-custom-order field='County' />
+        <field-sort-custom-order field='Calculation_0127596269596674' />
+        <field-sort-custom-order field='Total_Population' />
+        <field-sort-custom-order field='Below_Poverty' />
+        <field-sort-custom-order field='Total_Labor_Force' />
+        <field-sort-custom-order field='Unemployed' />
+        <field-sort-custom-order field='Less_Than_High_School' />
+        <field-sort-custom-order field='Poverty_Percent' />
+        <field-sort-custom-order field='Nonprofit_count' />
+        <field-sort-custom-order field='A' />
+        <field-sort-custom-order field='B' />
+        <field-sort-custom-order field='C' />
+        <field-sort-custom-order field='D' />
+        <field-sort-custom-order field='E' />
+        <field-sort-custom-order field='F' />
+        <field-sort-custom-order field='G' />
+        <field-sort-custom-order field='H' />
+        <field-sort-custom-order field='I' />
+        <field-sort-custom-order field='J' />
+        <field-sort-custom-order field='K' />
+        <field-sort-custom-order field='L' />
+        <field-sort-custom-order field='M' />
+        <field-sort-custom-order field='N' />
+        <field-sort-custom-order field='O' />
+        <field-sort-custom-order field='P' />
+        <field-sort-custom-order field='Q' />
+        <field-sort-custom-order field='R' />
+        <field-sort-custom-order field='S' />
+        <field-sort-custom-order field='T' />
+        <field-sort-custom-order field='U' />
+        <field-sort-custom-order field='V' />
+        <field-sort-custom-order field='W' />
+        <field-sort-custom-order field='X' />
+        <field-sort-custom-order field='Y' />
+        <field-sort-custom-order field='Z' />
+        <field-sort-custom-order field='Nonprofits_Per_1000' />
+        <field-sort-custom-order field='People_Per_Nonprofit' />
+        <field-sort-custom-order field='Unemployment_percent' />
+        <field-sort-custom-order field='Did_Not_Graduate_percent' />
+        <field-sort-custom-order field='Cluster' />
+        <field-sort-custom-order field='Needs_Score' />
+        <field-sort-custom-order field='Support_Gap_Score' />
+        <field-sort-custom-order field='Final_Score' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Label Selection' datatype='string' name='[Parameter 0127596269096961]' param-domain-type='list' role='measure' type='nominal' value='&quot;None&quot;'>
+          <calculation class='tableau' formula='&quot;None&quot;' />
+        </column>
+      </datasource-dependencies>
+      <object-graph>
+        <objects>
+          <object caption='final_county_analysis.csv' id='final_county_analysis.csv_416885BFA5274B26B617E61803ECEEAE'>
+            <properties context=''>
+              <relation name='Pivot' type='pivot'>
+                <columns>
+                  <column datatype='string' name='Pivot Field Names' />
+                  <column datatype='integer' name='Pivot Field Values' />
+                </columns>
+                <tag name='Pivot Field Names'>
+                  <value name='[A]' />
+                  <value name='[B]' />
+                  <value name='[C]' />
+                  <value name='[D]' />
+                  <value name='[E]' />
+                  <value name='[F]' />
+                  <value name='[G]' />
+                  <value name='[H]' />
+                  <value name='[I]' />
+                  <value name='[J]' />
+                  <value name='[K]' />
+                  <value name='[L]' />
+                  <value name='[M]' />
+                  <value name='[N]' />
+                  <value name='[O]' />
+                  <value name='[P]' />
+                  <value name='[Q]' />
+                  <value name='[R]' />
+                  <value name='[S]' />
+                  <value name='[T]' />
+                  <value name='[U]' />
+                  <value name='[V]' />
+                  <value name='[W]' />
+                  <value name='[X]' />
+                  <value name='[Y]' />
+                  <value name='[Z]' />
+                </tag>
+                <groups>
+                  <group name='Pivot Field Values'>
+                    <field name='[final_county_analysis.csv].[A]' />
+                    <field name='[final_county_analysis.csv].[B]' />
+                    <field name='[final_county_analysis.csv].[C]' />
+                    <field name='[final_county_analysis.csv].[D]' />
+                    <field name='[final_county_analysis.csv].[E]' />
+                    <field name='[final_county_analysis.csv].[F]' />
+                    <field name='[final_county_analysis.csv].[G]' />
+                    <field name='[final_county_analysis.csv].[H]' />
+                    <field name='[final_county_analysis.csv].[I]' />
+                    <field name='[final_county_analysis.csv].[J]' />
+                    <field name='[final_county_analysis.csv].[K]' />
+                    <field name='[final_county_analysis.csv].[L]' />
+                    <field name='[final_county_analysis.csv].[M]' />
+                    <field name='[final_county_analysis.csv].[N]' />
+                    <field name='[final_county_analysis.csv].[O]' />
+                    <field name='[final_county_analysis.csv].[P]' />
+                    <field name='[final_county_analysis.csv].[Q]' />
+                    <field name='[final_county_analysis.csv].[R]' />
+                    <field name='[final_county_analysis.csv].[S]' />
+                    <field name='[final_county_analysis.csv].[T]' />
+                    <field name='[final_county_analysis.csv].[U]' />
+                    <field name='[final_county_analysis.csv].[V]' />
+                    <field name='[final_county_analysis.csv].[W]' />
+                    <field name='[final_county_analysis.csv].[X]' />
+                    <field name='[final_county_analysis.csv].[Y]' />
+                    <field name='[final_county_analysis.csv].[Z]' />
+                  </group>
+                </groups>
+                <relation connection='textscan.0fcrhqu1hxzxz5183jk0w1191qxf (copy)' name='final_county_analysis.csv' table='[final_county_analysis#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='integer' name='County_ID' ordinal='0' />
+                    <column datatype='string' name='County' ordinal='1' />
+                    <column datatype='integer' name='Total_Population' ordinal='2' />
+                    <column datatype='integer' name='Below_Poverty' ordinal='3' />
+                    <column datatype='integer' name='Total_Labor_Force' ordinal='4' />
+                    <column datatype='integer' name='Unemployed' ordinal='5' />
+                    <column datatype='integer' name='Less_Than_High_School' ordinal='6' />
+                    <column datatype='real' name='Poverty_Percent' ordinal='7' />
+                    <column datatype='integer' name='Nonprofit_count' ordinal='8' />
+                    <column datatype='integer' name='A' ordinal='9' />
+                    <column datatype='integer' name='B' ordinal='10' />
+                    <column datatype='integer' name='C' ordinal='11' />
+                    <column datatype='integer' name='D' ordinal='12' />
+                    <column datatype='integer' name='E' ordinal='13' />
+                    <column datatype='integer' name='F' ordinal='14' />
+                    <column datatype='integer' name='G' ordinal='15' />
+                    <column datatype='integer' name='H' ordinal='16' />
+                    <column datatype='integer' name='I' ordinal='17' />
+                    <column datatype='integer' name='J' ordinal='18' />
+                    <column datatype='integer' name='K' ordinal='19' />
+                    <column datatype='integer' name='L' ordinal='20' />
+                    <column datatype='integer' name='M' ordinal='21' />
+                    <column datatype='integer' name='N' ordinal='22' />
+                    <column datatype='integer' name='O' ordinal='23' />
+                    <column datatype='integer' name='P' ordinal='24' />
+                    <column datatype='integer' name='Q' ordinal='25' />
+                    <column datatype='integer' name='R' ordinal='26' />
+                    <column datatype='integer' name='S' ordinal='27' />
+                    <column datatype='integer' name='T' ordinal='28' />
+                    <column datatype='integer' name='U' ordinal='29' />
+                    <column datatype='integer' name='V' ordinal='30' />
+                    <column datatype='integer' name='W' ordinal='31' />
+                    <column datatype='integer' name='X' ordinal='32' />
+                    <column datatype='integer' name='Y' ordinal='33' />
+                    <column datatype='integer' name='Z' ordinal='34' />
+                    <column datatype='real' name='Nonprofits_Per_1000' ordinal='35' />
+                    <column datatype='real' name='People_Per_Nonprofit' ordinal='36' />
+                    <column datatype='real' name='Unemployment_percent' ordinal='37' />
+                    <column datatype='real' name='Did_Not_Graduate_percent' ordinal='38' />
+                    <column datatype='integer' name='Cluster' ordinal='39' />
+                    <column datatype='real' name='Needs_Score' ordinal='40' />
+                    <column datatype='real' name='Support_Gap_Score' ordinal='41' />
+                    <column datatype='real' name='Final_Score' ordinal='42' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='County Needs Map'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final_county_analysis' name='federated.05ksf291bp3f8y1bps1lm07pogy0' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.05ksf291bp3f8y1bps1lm07pogy0'>
+            <column datatype='string' name='[County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='Needs Score' datatype='real' name='[Needs_Score]' role='measure' type='quantitative' />
+            <column-instance column='[County]' derivation='None' name='[none:County:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Needs_Score]' derivation='Sum' name='[sum:Needs_Score:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.05ksf291bp3f8y1bps1lm07pogy0].[none:County:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:County:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+            <target field='[federated.05ksf291bp3f8y1bps1lm07pogy0].[none:County:nk]' />
+          </filter>
+          <slices>
+            <column>[federated.05ksf291bp3f8y1bps1lm07pogy0].[none:County:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.05ksf291bp3f8y1bps1lm07pogy0].[Longitude (generated)]' field-type='quantitative' max='-12998274.974290686' min='-13925811.350227168' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.05ksf291bp3f8y1bps1lm07pogy0].[Latitude (generated)]' field-type='quantitative' max='6296327.3971680831' min='5670937.3163523665' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.05ksf291bp3f8y1bps1lm07pogy0].[sum:Needs_Score:qk]' num-steps='8' palette='orange_blue_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.05ksf291bp3f8y1bps1lm07pogy0].[sum:Needs_Score:qk]' />
+              <lod column='[federated.05ksf291bp3f8y1bps1lm07pogy0].[none:County:nk]' />
+              <geometry column='[federated.05ksf291bp3f8y1bps1lm07pogy0].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.05ksf291bp3f8y1bps1lm07pogy0].[Latitude (generated)]</rows>
+        <cols>[federated.05ksf291bp3f8y1bps1lm07pogy0].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{D7A479C6-5702-49A0-9B88-EB069198AE77}' />
+    </worksheet>
+    <worksheet name='Need vs. Support Gap Scatter Plot'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final_county_analysis' name='federated.05ksf291bp3f8y1bps1lm07pogy0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05ksf291bp3f8y1bps1lm07pogy0'>
+            <column datatype='string' name='[County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='Needs Score' datatype='real' name='[Needs_Score]' role='measure' type='quantitative' />
+            <column caption='Support Gap Score' datatype='real' name='[Support_Gap_Score]' role='measure' type='quantitative' />
+            <column-instance column='[County]' derivation='None' name='[none:County:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Needs_Score]' derivation='Sum' name='[sum:Needs_Score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Support_Gap_Score]' derivation='Sum' name='[sum:Support_Gap_Score:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.05ksf291bp3f8y1bps1lm07pogy0].[none:County:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:County:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+            <target field='[federated.05ksf291bp3f8y1bps1lm07pogy0].[none:County:nk]' />
+          </filter>
+          <slices>
+            <column>[federated.05ksf291bp3f8y1bps1lm07pogy0].[none:County:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.05ksf291bp3f8y1bps1lm07pogy0].[sum:Needs_Score:qk]' field-type='quantitative' max='3.7350861300466356' min='-2.170308822657637' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.05ksf291bp3f8y1bps1lm07pogy0].[sum:Support_Gap_Score:qk]' field-type='quantitative' max='3.5578330747626064' min='-3.4645421667913112' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.05ksf291bp3f8y1bps1lm07pogy0].[none:County:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.05ksf291bp3f8y1bps1lm07pogy0].[sum:Support_Gap_Score:qk]</rows>
+        <cols>[federated.05ksf291bp3f8y1bps1lm07pogy0].[sum:Needs_Score:qk]</cols>
+      </table>
+      <simple-id uuid='{CAFAE663-20AA-4001-A8EF-5B5C47AD3180}' />
+    </worksheet>
+    <worksheet name='Nonprofit Supports by Type'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final_county_analysis (copy)' name='federated.05ksf291bp3f8y1bps1lm07pogy0 (copy)' />
+            <datasource caption='final_county_analysis' name='federated.05ksf291bp3f8y1bps1lm07pogy0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05ksf291bp3f8y1bps1lm07pogy0'>
+            <column datatype='string' name='[County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column-instance column='[County]' derivation='None' name='[none:County:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.05ksf291bp3f8y1bps1lm07pogy0 (copy)'>
+            <column caption='Nonprofit Type' datatype='string' name='[Calculation_0127596276912131]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE [Pivot Field Names]&#13;&#10;&#13;&#10;WHEN &quot;A&quot; THEN &quot;Arts, Culture &amp; Humanities&quot;&#13;&#10;WHEN &quot;B&quot; THEN &quot;Education&quot;&#13;&#10;WHEN &quot;C&quot; THEN &quot;Environment&quot;&#13;&#10;WHEN &quot;D&quot; THEN &quot;Animal-Related&quot;&#13;&#10;WHEN &quot;E&quot; THEN &quot;Health Care&quot;&#13;&#10;WHEN &quot;F&quot; THEN &quot;Mental Health &amp; Crisis Intervention&quot;&#13;&#10;WHEN &quot;G&quot; THEN &quot;Diseases, Disorders &amp; Medical Disciplines&quot;&#13;&#10;WHEN &quot;H&quot; THEN &quot;Medical Research&quot;&#13;&#10;WHEN &quot;I&quot; THEN &quot;Crime &amp; Legal-Related&quot;&#13;&#10;WHEN &quot;J&quot; THEN &quot;Employment&quot;&#13;&#10;WHEN &quot;K&quot; THEN &quot;Food, Agriculture &amp; Nutrition&quot;&#13;&#10;WHEN &quot;L&quot; THEN &quot;Housing &amp; Shelter&quot;&#13;&#10;WHEN &quot;M&quot; THEN &quot;Public Safety, Disaster Preparedness &amp; Relief&quot;&#13;&#10;WHEN &quot;N&quot; THEN &quot;Recreation, Sports, Leisure &amp; Athletics&quot;&#13;&#10;WHEN &quot;O&quot; THEN &quot;Youth Development&quot;&#13;&#10;WHEN &quot;P&quot; THEN &quot;Human Services&quot;&#13;&#10;WHEN &quot;Q&quot; THEN &quot;International, Foreign Affairs &amp; National Security&quot;&#13;&#10;WHEN &quot;R&quot; THEN &quot;Civil Rights, Social Action &amp; Advocacy&quot;&#13;&#10;WHEN &quot;S&quot; THEN &quot;Community Improvement &amp; Capacity Building&quot;&#13;&#10;WHEN &quot;T&quot; THEN &quot;Philanthropy, Voluntarism &amp; Grantmaking Foundations&quot;&#13;&#10;WHEN &quot;U&quot; THEN &quot;Science &amp; Technology&quot;&#13;&#10;WHEN &quot;V&quot; THEN &quot;Social Science&quot;&#13;&#10;WHEN &quot;W&quot; THEN &quot;Public &amp; Societal Benefit&quot;&#13;&#10;WHEN &quot;X&quot; THEN &quot;Religion-Related&quot;&#13;&#10;WHEN &quot;Y&quot; THEN &quot;Mutual &amp; Membership Benefit&quot;&#13;&#10;WHEN &quot;Z&quot; THEN &quot;Unknown&quot;&#13;&#10;&#13;&#10;END' />
+            </column>
+            <column datatype='string' name='[County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='Nonprofit Type Code' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column caption='Nonprofit Count' datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_0127596276912131]' derivation='None' name='[none:Calculation_0127596276912131:nk]' pivot='key' type='nominal' />
+            <column-instance column='[County]' derivation='None' name='[none:County:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Values]' derivation='Sum' name='[sum:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.05ksf291bp3f8y1bps1lm07pogy0 (copy)].[none:County:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:County:nk]' member='&quot;Asotin County&quot;' />
+              <groupfilter function='member' level='[none:County:nk]' member='&quot;Benton County&quot;' />
+              <groupfilter function='member' level='[none:County:nk]' member='&quot;Chelan County&quot;' />
+              <groupfilter function='member' level='[none:County:nk]' member='&quot;Clallam County&quot;' />
+              <groupfilter function='member' level='[none:County:nk]' member='&quot;Clark County&quot;' />
+              <groupfilter function='member' level='[none:County:nk]' member='&quot;Columbia County&quot;' />
+              <groupfilter function='member' level='[none:County:nk]' member='&quot;Cowlitz County&quot;' />
+              <groupfilter function='member' level='[none:County:nk]' member='&quot;Douglas County&quot;' />
+              <groupfilter function='member' level='[none:County:nk]' member='&quot;Ferry County&quot;' />
+              <groupfilter function='member' level='[none:County:nk]' member='&quot;Franklin County&quot;' />
+              <groupfilter function='member' level='[none:County:nk]' member='&quot;Garfield County&quot;' />
+              <groupfilter function='member' level='[none:County:nk]' member='&quot;Grant County&quot;' />
+              <groupfilter function='member' level='[none:County:nk]' member='&quot;Grays Harbor County&quot;' />
+              <groupfilter function='member' level='[none:County:nk]' member='&quot;Island County&quot;' />
+              <groupfilter function='member' level='[none:County:nk]' member='&quot;Jefferson County&quot;' />
+              <groupfilter function='member' level='[none:County:nk]' member='&quot;King County&quot;' />
+              <groupfilter function='member' level='[none:County:nk]' member='&quot;Kitsap County&quot;' />
+              <groupfilter function='member' level='[none:County:nk]' member='&quot;Kittitas County&quot;' />
+              <groupfilter function='member' level='[none:County:nk]' member='&quot;Klickitat County&quot;' />
+              <groupfilter function='member' level='[none:County:nk]' member='&quot;Lewis County&quot;' />
+              <groupfilter function='member' level='[none:County:nk]' member='&quot;Lincoln County&quot;' />
+              <groupfilter function='member' level='[none:County:nk]' member='&quot;Mason County&quot;' />
+              <groupfilter function='member' level='[none:County:nk]' member='&quot;Okanogan County&quot;' />
+              <groupfilter function='member' level='[none:County:nk]' member='&quot;Pacific County&quot;' />
+              <groupfilter function='member' level='[none:County:nk]' member='&quot;Pend Oreille County&quot;' />
+              <groupfilter function='member' level='[none:County:nk]' member='&quot;Pierce County&quot;' />
+              <groupfilter function='member' level='[none:County:nk]' member='&quot;San Juan County&quot;' />
+              <groupfilter function='member' level='[none:County:nk]' member='&quot;Skagit County&quot;' />
+              <groupfilter function='member' level='[none:County:nk]' member='&quot;Skamania County&quot;' />
+              <groupfilter function='member' level='[none:County:nk]' member='&quot;Snohomish County&quot;' />
+              <groupfilter function='member' level='[none:County:nk]' member='&quot;Spokane County&quot;' />
+              <groupfilter function='member' level='[none:County:nk]' member='&quot;Stevens County&quot;' />
+              <groupfilter function='member' level='[none:County:nk]' member='&quot;Thurston County&quot;' />
+              <groupfilter function='member' level='[none:County:nk]' member='&quot;Wahkiakum County&quot;' />
+              <groupfilter function='member' level='[none:County:nk]' member='&quot;Walla Walla County&quot;' />
+              <groupfilter function='member' level='[none:County:nk]' member='&quot;Whatcom County&quot;' />
+              <groupfilter function='member' level='[none:County:nk]' member='&quot;Whitman County&quot;' />
+              <groupfilter function='member' level='[none:County:nk]' member='&quot;Yakima County&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.05ksf291bp3f8y1bps1lm07pogy0].[none:County:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:County:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+            <target field='[federated.05ksf291bp3f8y1bps1lm07pogy0 (copy)].[none:County:nk]' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.05ksf291bp3f8y1bps1lm07pogy0 (copy)].[none:Calculation_0127596276912131:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.05ksf291bp3f8y1bps1lm07pogy0 (copy)].[sum:Pivot Field Values:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.05ksf291bp3f8y1bps1lm07pogy0 (copy)].[none:County:nk]</column>
+            <column>[federated.05ksf291bp3f8y1bps1lm07pogy0].[none:County:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.05ksf291bp3f8y1bps1lm07pogy0 (copy)].[sum:Pivot Field Values:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.05ksf291bp3f8y1bps1lm07pogy0 (copy)].[sum:Pivot Field Values:qk]</rows>
+        <cols>[federated.05ksf291bp3f8y1bps1lm07pogy0 (copy)].[none:Calculation_0127596276912131:nk]</cols>
+      </table>
+      <simple-id uuid='{9BA237D4-CEF6-4888-94C4-9C2502690714}' />
+    </worksheet>
+    <worksheet name='Support Gap Map'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final_county_analysis' name='federated.05ksf291bp3f8y1bps1lm07pogy0' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.05ksf291bp3f8y1bps1lm07pogy0'>
+            <column datatype='string' name='[County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='Support Gap Score' datatype='real' name='[Support_Gap_Score]' role='measure' type='quantitative' />
+            <column-instance column='[County]' derivation='None' name='[none:County:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Support_Gap_Score]' derivation='Sum' name='[sum:Support_Gap_Score:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.05ksf291bp3f8y1bps1lm07pogy0].[none:County:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:County:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+            <target field='[federated.05ksf291bp3f8y1bps1lm07pogy0].[none:County:nk]' />
+          </filter>
+          <slices>
+            <column>[federated.05ksf291bp3f8y1bps1lm07pogy0].[none:County:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.05ksf291bp3f8y1bps1lm07pogy0].[Longitude (generated)]' field-type='quantitative' max='-12418337.589895453' min='-14189255.024779223' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.05ksf291bp3f8y1bps1lm07pogy0].[Latitude (generated)]' field-type='quantitative' max='6221969.9099318394' min='5697778.3424507296' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.05ksf291bp3f8y1bps1lm07pogy0].[sum:Support_Gap_Score:qk]' num-steps='8' palette='orange_blue_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.05ksf291bp3f8y1bps1lm07pogy0].[sum:Support_Gap_Score:qk]' />
+              <lod column='[federated.05ksf291bp3f8y1bps1lm07pogy0].[none:County:nk]' />
+              <geometry column='[federated.05ksf291bp3f8y1bps1lm07pogy0].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.05ksf291bp3f8y1bps1lm07pogy0].[Latitude (generated)]</rows>
+        <cols>[federated.05ksf291bp3f8y1bps1lm07pogy0].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{118EF2AF-6649-431A-A7B1-876E073A1C83}' />
+    </worksheet>
+    <worksheet name='Top County Ranking'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final_county_analysis' name='federated.05ksf291bp3f8y1bps1lm07pogy0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05ksf291bp3f8y1bps1lm07pogy0'>
+            <column datatype='string' name='[County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='Final Score' datatype='real' name='[Final_Score]' role='measure' type='quantitative' />
+            <column-instance column='[County]' derivation='None' name='[none:County:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Final_Score]' derivation='Sum' name='[sum:Final_Score:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.05ksf291bp3f8y1bps1lm07pogy0].[none:County:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:County:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+            <target field='[federated.05ksf291bp3f8y1bps1lm07pogy0].[none:County:nk]' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.05ksf291bp3f8y1bps1lm07pogy0].[none:County:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.05ksf291bp3f8y1bps1lm07pogy0].[sum:Final_Score:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.05ksf291bp3f8y1bps1lm07pogy0].[none:County:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.05ksf291bp3f8y1bps1lm07pogy0].[none:County:nk]</rows>
+        <cols>[federated.05ksf291bp3f8y1bps1lm07pogy0].[sum:Final_Score:qk]</cols>
+      </table>
+      <simple-id uuid='{54290282-E6F5-493E-B38B-5CAC3868334E}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='ABC Community Support- Washington County Needs &amp; Support Analysis '>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <datasources>
+        <datasource caption='final_county_analysis' name='federated.05ksf291bp3f8y1bps1lm07pogy0' />
+      </datasources>
+      <datasource-dependencies datasource='federated.05ksf291bp3f8y1bps1lm07pogy0'>
+        <column datatype='string' name='[County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+        <column-instance column='[County]' derivation='None' name='[none:County:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='92094' id='16' param='vert' type-v2='layout-flow' w='96928' x='1536' y='930'>
+            <zone h='15581' id='17' type-v2='title' w='96928' x='1536' y='930'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='76513' id='7' param='horz' type-v2='layout-flow' w='96928' x='1536' y='16511'>
+              <zone h='76513' id='5' type-v2='layout-basic' w='36083' x='1536' y='16511'>
+                <zone h='36423' id='3' name='County Needs Map' w='36083' x='1536' y='16511'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='65' h='6792' id='8' is-fixed='true' name='County Needs Map' pane-specification-id='0' param='[federated.05ksf291bp3f8y1bps1lm07pogy0].[sum:Needs_Score:qk]' type-v2='color' w='36083' x='1536' y='52934'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='33298' id='11' name='Need vs. Support Gap Scatter Plot' w='36083' x='1536' y='59726'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone fixed-size='317' h='76513' id='13' is-fixed='true' type-v2='layout-basic' w='60845' x='37619' y='16511'>
+                <zone h='43215' id='20' is-fixed='true' type-v2='layout-basic' w='60845' x='37619' y='16511'>
+                  <zone h='43215' id='22' is-fixed='true' type-v2='layout-basic' w='60845' x='37619' y='16511'>
+                    <zone h='36398' id='21' param='vert' type-v2='layout-flow' w='60845' x='37619' y='16511'>
+                      <zone h='36398' id='9' name='Support Gap Map' w='60845' x='37619' y='16511'>
+                        <layout-cache minheight='251' minwidth='202' type-h='scalable' type-w='scalable' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                    <zone h='6817' id='23' param='vert' type-v2='layout-flow' w='60845' x='37619' y='52909'>
+                      <zone h='6817' id='10' name='Support Gap Map' pane-specification-id='0' param='[federated.05ksf291bp3f8y1bps1lm07pogy0].[sum:Support_Gap_Score:qk]' type-v2='color' w='60845' x='37619' y='52909'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+                <zone h='33298' id='14' param='vert' type-v2='layout-flow' w='60845' x='37619' y='59726'>
+                  <zone fixed-size='461' h='33298' id='12' is-fixed='true' name='Top County Ranking' w='60845' x='37619' y='59726'>
+                    <layout-cache type-h='fixed' type-w='fixed' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='6046' id='18' mode='dropdown' name='Support Gap Map' param='[federated.05ksf291bp3f8y1bps1lm07pogy0].[none:County:nk]' type-v2='filter' values='database' w='96928' x='1536' y='93024'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1450' minheight='1450' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='25' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98140' id='24' param='vert' type-v2='layout-flow' w='97538' x='1231' y='930'>
+                <zone h='10697' id='17' type-v2='title' w='97538' x='1231' y='930'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38749' id='3' is-fixed='true' name='County Needs Map' w='48769' x='1231' y='11627'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='65' h='7225' id='8' name='County Needs Map' pane-specification-id='0' param='[federated.05ksf291bp3f8y1bps1lm07pogy0].[sum:Needs_Score:qk]' type-v2='color' w='48769' x='1231' y='50376'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6046' id='18' mode='dropdown' name='Support Gap Map' param='[federated.05ksf291bp3f8y1bps1lm07pogy0].[none:County:nk]' type-v2='filter' values='database' w='97538' x='1231' y='93024'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38722' id='9' is-fixed='true' name='Support Gap Map' w='48769' x='50000' y='11627'>
+                  <layout-cache minheight='251' minwidth='202' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7252' id='10' name='Support Gap Map' pane-specification-id='0' param='[federated.05ksf291bp3f8y1bps1lm07pogy0].[sum:Support_Gap_Score:qk]' type-v2='color' w='48769' x='50000' y='50349'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='35423' id='11' is-fixed='true' name='Need vs. Support Gap Scatter Plot' w='48769' x='1231' y='57601'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='35423' id='12' is-fixed='true' name='Top County Ranking' w='48769' x='50000' y='57601'>
+                  <layout-cache type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{14964E32-D90D-4E30-ADFE-9373756B94DA}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Washington Nonprofit Support by County'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <datasources>
+        <datasource caption='final_county_analysis' name='federated.05ksf291bp3f8y1bps1lm07pogy0' />
+      </datasources>
+      <datasource-dependencies datasource='federated.05ksf291bp3f8y1bps1lm07pogy0'>
+        <column datatype='string' name='[County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+        <column-instance column='[County]' derivation='None' name='[none:County:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='90814' id='15' param='horz' type-v2='layout-flow' w='97538' x='1231' y='930'>
+            <zone h='90814' id='5' param='vert' type-v2='layout-flow' w='97538' x='1231' y='930'>
+              <zone h='5814' id='7' type-v2='title' w='97538' x='1231' y='930'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='85000' id='6' type-v2='layout-basic' w='97538' x='1231' y='6744'>
+                <zone h='47213' id='8' name='Nonprofit Supports by Type' w='97538' x='1231' y='44531'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='28331' id='12' name='Support Gap Map' w='97538' x='1231' y='6744'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='9456' id='13' name='Support Gap Map' pane-specification-id='0' param='[federated.05ksf291bp3f8y1bps1lm07pogy0].[sum:Support_Gap_Score:qk]' type-v2='color' w='97538' x='1231' y='35075'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='7326' id='16' mode='dropdown' name='Support Gap Map' param='[federated.05ksf291bp3f8y1bps1lm07pogy0].[none:County:nk]' type-v2='filter' values='database' w='97538' x='1231' y='91744'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='750' minheight='750' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='18' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98140' id='17' param='vert' type-v2='layout-flow' w='97538' x='1231' y='930'>
+                <zone h='5814' id='7' type-v2='title' w='97538' x='1231' y='930'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7326' id='16' mode='dropdown' name='Support Gap Map' param='[federated.05ksf291bp3f8y1bps1lm07pogy0].[none:County:nk]' type-v2='filter' values='database' w='97538' x='1231' y='91744'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='236' h='28331' id='12' is-fixed='true' name='Support Gap Map' w='97538' x='1231' y='6744'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9456' id='13' name='Support Gap Map' pane-specification-id='0' param='[federated.05ksf291bp3f8y1bps1lm07pogy0].[sum:Support_Gap_Score:qk]' type-v2='color' w='97538' x='1231' y='35075'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='47213' id='8' is-fixed='true' name='Nonprofit Supports by Type' w='97538' x='1231' y='44531'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{EBA177C6-E811-41C4-A2B4-F846DFCD53D8}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='63'>
+    <window class='worksheet' name='County Needs Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='100'>
+            <card pane-specification-id='0' param='[federated.05ksf291bp3f8y1bps1lm07pogy0].[sum:Needs_Score:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4CFA7E40-FDA9-4CF7-AE7D-136FAD78CA01}' />
+    </window>
+    <window class='worksheet' name='Support Gap Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='100'>
+            <card pane-specification-id='0' param='[federated.05ksf291bp3f8y1bps1lm07pogy0].[sum:Support_Gap_Score:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6D284D62-1B47-4300-8C67-855B0A76125B}' />
+    </window>
+    <window class='worksheet' name='Need vs. Support Gap Scatter Plot'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4DDA2BE9-5AEC-422F-B6BE-3486EE3188FE}' />
+    </window>
+    <window class='worksheet' name='Top County Ranking'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{73505BCF-D9B0-42A5-8C63-44FE69731084}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Nonprofit Supports by Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.05ksf291bp3f8y1bps1lm07pogy0 (copy)].[none:County:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F1B6E572-22C7-48F3-A256-DB09AF0BEFB6}' />
+    </window>
+    <window class='dashboard' name='ABC Community Support- Washington County Needs &amp; Support Analysis '>
+      <viewpoints>
+        <viewpoint name='County Needs Map'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Need vs. Support Gap Scatter Plot'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Support Gap Map'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top County Ranking' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{75FFF8A2-B099-4C76-B2E0-C3E7C31A519B}' />
+    </window>
+    <window class='dashboard' name='Washington Nonprofit Support by County'>
+      <viewpoints>
+        <viewpoint name='Nonprofit Supports by Type'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Support Gap Map'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{B9434324-A29C-4AD2-AD09-1FBCB01C33EB}' />
+    </window>
+  </windows>
+</workbook>

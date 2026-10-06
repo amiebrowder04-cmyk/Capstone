@@ -37,8 +37,8 @@ Machine Learning Approach
 For this project, I used a K-Means unsupervised clustering algorithm. Originally, I planned to use a Random Forest Regression model, but this was changed after reviewing the available data. Because I was working with counties within a single state, I only had 39 counties of data to use. If I were to divide this data into training and testing sets, the resulting sets would be very small and may not yield reliable results given the limited data available. By switching to an unsupervised clustering model, I was able to use all 39 counties to identify groups with similar characteristics.
 
 The clustering model used variables associated with community needs to group counties with similar characteristics. The variables used were poverty, educational attainment, and unemployment percentages. Before the clusters were formed, StandardScaler was applied to the selected variables to ensure that each feature had a comparable influence on the model. After evaluating the model using different numbers of clusters and comparing the Silhouette scores, I ultimately selected four clusters because they produced the highest Silhouette score.
-Model Evaluation
 
+Model Evaluation
 To evaluate the model used in this project, I used the Silhouette Score, Davies-Bouldin Index, and Calinski-Harabasz Index. All three measures were used to evaluate models with 2, 3, 4, 5, and 6 clusters.
 
 The Silhouette Score was originally used to help determine how many clusters to use for the model and was later used as one of the measures to evaluate the final clustering. Four clusters performed the best according to the Silhouette Score, with a score of 0.421. This was the highest Silhouette Score among the tested cluster sizes.
@@ -48,6 +48,17 @@ The Davies-Bouldin Index was used to compare each cluster with its most similar 
 Lastly, the Calinski-Harabasz Index was used to assess the separation and compactness of the clusters. The index showed that 6 clusters had the highest score at 41.053, while 4 clusters had a score of 40.365. Although 6 clusters performed better on this measure, the difference between the scores for the 4- and 6-cluster cases was relatively small.
 
 After reviewing the results from all three evaluation methods, I decided that 4 clusters were the best option for this project. While the Davies-Bouldin and Calinski-Harabasz measures suggested that 6 clusters would yield stronger clustering, 6 clusters resulted in a lower Silhouette Score. Selecting 4 clusters also provided a more manageable number of groups for interpreting and communicating the results to the board. Therefore, 4 clusters provided the best overall balance between the evaluation measures and the project's goal of identifying counties with similar community-need characteristics.
+
+Error and Bias Analysis
+Error and bias analysis were conducted to determine whether the results accurately represented the counties in Washington State. To analyze the project for potential error and bias, I examined how different K-Means random state seeds affected the clustering of counties, evaluated how standardization affected the variables used by the ML model, reviewed individual county silhouette scores to identify counties that may not fit well within their assigned clusters, and tested the sensitivity of the final county rankings to different weighting combinations.
+Running K-Means with multiple random seeds allowed me to assess whether the model produced similar results when the random seed was changed. I tested random states of 0, 10, 20, 30, and 42 and compared each result with the clustering produced using random state 0. The results for random states 10, 30, and 42 were identical to the baseline, while random state 20 produced a slightly different result. The difference was minimal, with an Adjusted Rand Index (ARI) of 0.925. These results show that the clustering was highly consistent across different random states, indicating that the K-Means clusters were highly stable.
+
+Next, I evaluated the effect of standardizing the variables used by the ML model. I compared the mean and standard deviation (STD) of Poverty_Percent, Unemployment_percent, and Did_Not_Graduate_percent before and after scaling with StandardScaler. Before scaling, the variables had different levels of variation, which could have caused one variable to have a greater influence on the K-Means distance calculations. After scaling, all three variables had means near 0 and standard deviations near 1. This indicates that the scaler placed all three variables on a comparable scale, reducing the possibility that one variable would dominate the clustering simply because of its numerical scale.
+
+I also evaluated the individual silhouette scores for each county. Rather than relying only on the overall average silhouette score, I calculated a silhouette score for each county and identified counties with particularly low or negative scores. Low scores indicate that a county may be close to the boundary between clusters, while a negative score may indicate that the county is more like another cluster. Wahkiakum County had the lowest score and was the only county with a negative silhouette score, suggesting that it may be more like another cluster. Mason County and Grant County also had relatively low scores, indicating weaker cluster membership. Because of these findings, the clustering results for these counties should be interpreted with greater caution.
+
+Lastly, I tested the sensitivity of the final county rankings by adjusting the percentages of the Needs Score and Support Gap Score that contribute to the Final Score. The original calculation used a 50/50 weighting. I also tested the 60% Need/40% Support Gap and the 40% Need/60% Support Gap and compared the resulting rankings. Yakima County remained the top-scoring county under both alternative weighting scenarios. Grant County and Franklin County also remained in the top five, although some other counties moved into or out of the top five depending on the weighting. This suggests that the highest-priority recommendation is relatively stable, while some other rankings are sensitive to how the board prioritizes community need versus nonprofit availability.
+
 
 Results
 After running the model, the counties were divided into four clusters. The clusters were then examined and compared using the counties' community-need variables to determine which characteristics each cluster represented. To do this, the community needs variables averaged for each cluster to provide an overall view of what each cluster represents. Based on these averages, the clusters were ordered from highest to lowest community need as follows: Cluster 0, Cluster 3, Cluster 2, and Cluster 1.
@@ -60,7 +71,12 @@ Lastly, the Final Score was created by combining the Needs Score and Support Gap
 After calculating the Final Score, the three counties identified as potentially benefiting from additional community support hubs were Yakima County, Grant County, and Franklin County.
 
 Tableau Dashboard
-The Tableau dashboard will present the project findings and provide the board with an interactive way to explore community needs and nonprofit support across Washington State.
+The Tableau dashboard presents the project findings and provides the board with an interactive way to explore community needs and nonprofit support across Washington State. Two dashboards were created to tell the data story and highlight key findings and information for the board.
+
+The ABC Community Support – Washington County Needs & Support Analysis dashboard was created as an executive overview. The overview includes a County Needs Map, a Support Gap Map, a Need vs. Support Gap Scatter Plot, and a Top County Ranking. This dashboard provides an overview of the findings in a clear, concise format. It is intended to be the first dashboard presented to the board, so they can quickly gain information and insight into community needs and nonprofit support.
+
+The second dashboard, Nonprofit Supports by Type, was created as an additional exploratory tool to help the board expand their understanding of nonprofit support across Washington State. The dashboard provides an overview of available nonprofit support and allows the board to filter the information to an individual county. This allows them to explore the number and types of nonprofits in each county and better understand the existing support in areas identified through the analysis.
+
 
 Tools and Technologies
 Programming/Development
@@ -101,6 +117,7 @@ Capstone project/
 │   └── final_county_analysis.csv
 │
 ├── ML/
+|   ├── analyze_stability.py
 │   ├── train_model.py
 │   └── evaluate_model.py
 │
@@ -117,7 +134,10 @@ Capstone project/
 │
 ├── tests/
 │   └── capstone_test.py
-│
+|
+├── Visuals and Dashboard
+|   └── Capstone_Displays.twb
+|
 ├── .gitignore
 ├── app.py
 ├── capstone.ipynb
@@ -143,6 +163,8 @@ The next limiting factor is that the machine learning model uses the community-n
 Another limiting factor is that the IRS provides data on the number of nonprofits in each county, their names, and their types. However, it does not specify the scope or amount of support that the nonprofits provide to the community. Therefore, the number of nonprofits in a county is not an exact measure of the amount of community support available.
 
 A fourth limitation to keep in mind is that ZIP Codes can cross county boundaries. Nonprofit organizations were therefore assigned to counties based on the available HUD crosswalk rather than their exact service locations. This provides an estimate of where nonprofit organizations are located but does not identify their exact service locations or the geographic area they serve.
+
+Additional limitations were identified during the analysis of the project's stability. While examining the silhouette scores for individual counties, it was found that Wahkiakum and Mason counties had particularly weak cluster memberships. I also found that changing the percentage contribution of the Needs Score and Support Gap Score during the sensitivity analysis affected some county rankings.
 
 Understanding the limitations of this project is important when interpreting the results and using them to make business decisions. While there are limitations in the data sets and methodology, the analysis can still be used for its intended purpose. This project should be used to identify counties that may guarantee further consideration for additional support. It is intended to provide a starting point for the board when making decisions, rather than serving as the sole basis for selecting new community support hub locations.
 
