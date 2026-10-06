@@ -38,3 +38,11 @@ baseline = cluster_results[0]
 for seed, labels in zip(random_states[1:], cluster_results[1:]):
     ari = adjusted_rand_score(baseline, labels)
     print(f"Random state {seed}: ARI = {ari:.3f}")
+
+
+# Check the effects of standardization 
+print("\nBefore Scaling:")
+print(df[features].describe().loc[["mean", "std"]])
+
+print("\nAfter Scaling:")
+print(pd.DataFrame(X_scaled, columns = features).describe().loc[["mean", "std"]])
