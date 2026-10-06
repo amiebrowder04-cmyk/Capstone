@@ -70,3 +70,30 @@ silhouette_results = silhouette_results.sort_values("Silhouette_Score")
 
 print("\nCounties with the lowest silhouette scores:")
 print(silhouette_results.head(10).to_string(index = False))
+
+# Test the sensativity of the final county ranking to diffrent weights
+df["Score_60_Need"] = (
+    df["Needs_Score"] * 0.60
+    +df["Support_Gap_Score"] * 0.40
+)
+
+df["Score_40_Need"] = (
+    df["Needs_Score"] * 0.40
+    +df["Support_Gap_Score"] * 0.60
+)
+
+print("\nTop 5 coutnies with 60% Need / 40% Support Gap:")
+print(
+    df[["County", "Score_60_Need"]]
+    .sort_values("Score_60_Need", ascending=False)
+    .head(5)
+    .to_string(index=False)
+)
+
+print("\nTop 5 counties with 40% Need / 60% Support Gap:")
+print(
+    df[["County", "Score_40_Need"]]
+    .sort_values("Score_40_Need", ascending=False)
+    .head(5)
+    .to_string(index=False)
+)
