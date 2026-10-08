@@ -30,6 +30,26 @@ silhouette = silhouette_score(
 
 print(f"Silhouette Score: {silhouette:.3f}")
 
+# Compare the Silhouette Scores for different number of clusters 
+
+silhouette_scores = {}
+
+for k in range(2,9):
+    kmeans = KMeans(
+        n_clusters=k,
+        random_state=42,
+        n_init=10
+    )
+
+    cluster_labels = kmeans.fit_predict(X_scaled)
+
+    score = silhouette_score(X_scaled, cluster_labels)
+    silhouette_scores[k] = score
+
+print("\nSilhouette Scores:")
+for k, score in silhouette_scores.items():
+    print(f"{k} clusters: {score:.3f}")
+
 
 # Davies-Bouldin Index 
 
@@ -39,7 +59,7 @@ davies_bouldin = davies_bouldin_score(
     df["Cluster"]
 )
 
-print(f"Davies-Bouldin Index: {davies_bouldin:.3f}")
+print(f"\nDavies-Bouldin Index: {davies_bouldin:.3f}")
 
 davies_bouldin_scores = {}
 
